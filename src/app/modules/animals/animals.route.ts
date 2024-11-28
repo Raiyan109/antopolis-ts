@@ -9,4 +9,10 @@ router.post(
     AnimalControllers.createAnimal,
 );
 
+router.get(
+    '/',
+    // auth('user', 'admin'),
+    AnimalControllers.getAllAnimals,
+);
+
 export const AnimalRoutes = router;

@@ -10,6 +10,13 @@ const createAnimalIntoDB = async (animal: TAnimal) => {
     return result
 }
 
+const getAnimalFromDB = async () => {
+
+    const result = await AnimalModel.find()
+    return result
+}
+
 export const AnimalServices = {
-    createAnimalIntoDB
+    createAnimalIntoDB,
+    getAnimalFromDB
 }
