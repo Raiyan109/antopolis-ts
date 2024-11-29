@@ -10,7 +10,11 @@ const animalSchema = new Schema<TAnimal>({
     image: {
         type: String,
         required: true
-    }
+    },
+    category: {
+        type: String,
+        required: true
+    },
 }, { timestamps: true })
 
 export const AnimalModel = model<TAnimal>('Animal', animalSchema)
