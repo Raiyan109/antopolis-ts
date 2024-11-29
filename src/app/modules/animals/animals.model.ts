@@ -13,7 +13,7 @@ const animalSchema = new Schema<TAnimal>({
     },
     category: {
         type: String,
-        required: true
+        // required: true
     },
 }, { timestamps: true })
 

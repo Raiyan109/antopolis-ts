@@ -13,7 +13,7 @@ const animalSchema = new mongoose_1.Schema({
     },
     category: {
         type: String,
-        required: true
+        // required: true
     },
 }, { timestamps: true });
 exports.AnimalModel = (0, mongoose_1.model)('Animal', animalSchema);
